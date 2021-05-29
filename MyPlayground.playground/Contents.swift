@@ -39,6 +39,32 @@ func printTotalPrice(가격 price: Int, 갯수 count: Int) {
 }
 
 printTotalPrice(가격:1500, 갯수:5)
+printTotalPrice(가격:1500, 갯수:10)
+printTotalPrice(가격:1500, 갯수:7)
+printTotalPrice(가격:1500, 갯수:1)
+
+//Default 값을 주고 싶을때.
+func printTotalPricewithDefaultValue(price: Int = 1500, count: Int) {
+    print("Total price: \(price * count)")
+}
+
+printTotalPricewithDefaultValue(count : 5)
+printTotalPricewithDefaultValue(count : 10)
+printTotalPricewithDefaultValue(count : 7)
+printTotalPricewithDefaultValue(count : 1)
+
+printTotalPricewithDefaultValue(price: 2000, count : 5)
+
+func totalprice(price: Int, count: Int) -> Int {
+    let totalprice = price * count
+    return totalprice
+}
+
+let calculatedPrice = totalprice(price: 10000, count: 77)
+print(calculatedPrice)
+
+
+
 
 
 
